@@ -19,18 +19,30 @@
         app:srcCompat="@drawable/background1"
         tools:ignore="ImageContrastCheck" />
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="193dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/txtBattleLog"
+        app:layout_constraintEnd_toEndOf="@+id/txtMonsDpt"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:srcCompat="@drawable/b7c9e2" />
+
     <Button
         android:id="@+id/btnEndTurn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
         android:text="End Turn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.898" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -46,15 +58,15 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="192dp"
-        android:layout_height="285dp"
+        android:layout_width="173dp"
+        android:layout_height="252dp"
         android:layout_marginTop="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823"
+        app:layout_constraintVertical_bias="0.769"
         app:srcCompat="@drawable/hero1" />
 
     <TextView
@@ -115,13 +127,40 @@
 
     <TextView
         android:id="@+id/txtBattleLog"
-        android:layout_width="318dp"
-        android:layout_height="30dp"
+        android:layout_width="363dp"
+        android:layout_height="37dp"
         android:layout_marginBottom="16dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnSkill1"
+        android:layout_width="81dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.147"
+        app:srcCompat="@drawable/fire" />
+
+    <ImageButton
+        android:id="@+id/btnSkill2"
+        android:layout_width="75dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnSkill1"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.183"
+        app:srcCompat="@drawable/stun" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

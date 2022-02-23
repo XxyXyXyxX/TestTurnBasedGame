@@ -14,15 +14,6 @@ public class GameUnit {
     private int atkMin;
     private int atkMax;
     private int level;
-    private int gameCounter;
-    //Methods
-    int baseDamage(int atkMin, int atkMax){
-        Random randomizer = new Random();
-        return (randomizer.nextInt(atkMax-atkMin)+atkMin);
-    }
-    int baseDamage(){
-        return 0;
-    }
     //Getters
 
     public double getCurrentHealthPoint() { return currentHealthPoint; }
@@ -34,7 +25,6 @@ public class GameUnit {
     public int getAtkMax() { return atkMax; }
     public int getAtkMin() { return atkMin; }
     public int getLevel() { return level; }
-    public int getGameCounter() { return gameCounter; }
     public String getTitle() { return title; }
     //Setters
 
@@ -48,7 +38,6 @@ public class GameUnit {
     public void setAtkMin(int atkMin) { this.atkMin = atkMin; }
     public void setAtkMax(int atkMax) { this.atkMax = atkMax; }
     public void setLevel(int level) { this.level = level; }
-    public void setGameCounter(int gameCounter) { this.gameCounter = gameCounter; }
     public void setTitle(String title) { this.title = title; }
     //Constructors
 

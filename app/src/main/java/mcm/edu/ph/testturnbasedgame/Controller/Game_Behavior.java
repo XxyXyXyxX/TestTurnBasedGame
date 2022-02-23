@@ -8,6 +8,6 @@ public class Game_Behavior extends GameUnit {
     Random randomizer = new Random();
     public int attack(int atkMin,int atkMax){
         return randomizer.nextInt(atkMax-atkMin)+atkMin;
-
         }
+
     }
